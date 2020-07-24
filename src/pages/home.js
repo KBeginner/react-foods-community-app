@@ -1,4 +1,5 @@
 import React from "react"
+import "./home.css"
 import { Button } from 'antd-mobile';
 
 class Home extends React.Component{
@@ -10,8 +11,8 @@ class Home extends React.Component{
     }
     render(h) {
         return (
-            <div>
-                <Button type="ghost">Start</Button>
+            <div className="home">
+                {/* <Button type="ghost">Start</Button> */}
                 <h1>{this.state.a}</h1> 
             </div>
         )

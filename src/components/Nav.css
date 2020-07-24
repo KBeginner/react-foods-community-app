@@ -1,4 +1,10 @@
-/* ul li{
-    list-style: none;
-    display: inline-block;
-} */
+.tabber-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.am-tab-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
