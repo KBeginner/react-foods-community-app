@@ -6,14 +6,13 @@ class Home extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            a: 'I am A '
+            
         }
     }
     render(h) {
         return (
             <div className="home">
-                {/* <Button type="ghost">Start</Button> */}
-                <h1>{this.state.a}</h1> 
+                <Button type="info" inline>请假申请</Button>
             </div>
         )
     }

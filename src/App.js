@@ -1,21 +1,25 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Nav from './components/Nav'
+import NavBar from './components/NavBar'
+import TabBar from './components/TabBar'
 import Home from './pages/home'
 import Mine from './pages/mine'
+
 import 'antd-mobile/dist/antd-mobile.css';
 
-function App() {
-  return (
-    // 首页路由
-    <Router>
-      <Switch>
-        <Route exact  path='/' component={Home}/>
-        <Route path='/mine' component={Mine}/>
-      </Switch>
-      <Nav/>
-    </Router>
-  );
+class App extends React.Component{
+  backHandle(){
+    console.log('parent')
+  }
+  render(){
+    return  <Router>
+                <NavBar back backHandle={this.backHandle}/>
+                <Switch>
+                  <Route exact path='/' component={Home}/>
+                  <Route path='/mine' component={Mine}/>
+                </Switch>
+                <TabBar/>
+            </Router>
+  }
 }
-
 export default App;

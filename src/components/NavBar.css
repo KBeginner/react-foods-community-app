@@ -1,0 +1,15 @@
+.Navbar{
+    background-color: #0a8be8;
+    color: #ffffff;
+    height: 1rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
