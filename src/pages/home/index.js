@@ -1,6 +1,5 @@
 import React from "react"
-import "./home.css"
-import { Button } from 'antd-mobile';
+import "./index.css"
 
 class Home extends React.Component{
     constructor(props){
@@ -12,7 +11,10 @@ class Home extends React.Component{
     render(h) {
         return (
             <div className="home">
-                <Button type="info" inline>请假申请</Button>
+                <header className="header-wrap">
+                    <div className="click-btn">点我告诉你</div>
+                </header>
+                
             </div>
         )
     }

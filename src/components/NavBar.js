@@ -5,20 +5,21 @@ import MoreIcon from '../fonts/more.svg'
 
 class NavBar extends React.Component{
     static defaultProps = {
-        title: '请假系统'
+        title: '今天吃什么',
+        back: false,
+        more: false
     }
 
     backHandle(){
-        console.log('child')
         this.props.backHandle()
     }
 
     render(){
         return <div className="Navbar">
-            <span className="title">{this.props.title}</span>
-            {this.props.back ? <img src={BackIcon} alt="back" onClick={this.backHandle}/> : ''}
-            {this.props.more ? <img src={MoreIcon} alt="more"/> : ''}
-        </div>
+                    <span className="title">{this.props.title}</span>
+                    {this.props.back ? <img src={BackIcon} alt="back" onClick={this.backHandle.bind(this)}/> : ''}
+                    {this.props.more ? <img src={MoreIcon} alt="more"/> : ''}
+                </div>
     }
 }
 
