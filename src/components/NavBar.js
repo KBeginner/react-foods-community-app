@@ -16,7 +16,7 @@ class NavBar extends React.Component{
 
     render(){
         return <div className="Navbar">
-                    <span className="title">{this.props.title}</span>
+                    <span className="head-title">{this.props.title}</span>
                     {this.props.back ? <img src={BackIcon} alt="back" onClick={this.backHandle.bind(this)}/> : ''}
                     {this.props.more ? <img src={MoreIcon} alt="more"/> : ''}
                 </div>

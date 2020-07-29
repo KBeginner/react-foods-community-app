@@ -7,6 +7,20 @@ import food4 from '../../fonts/foods/青椒炒蛋.jpg'
 import food5 from '../../fonts/foods/手抓饼.jpg'
 import food6 from '../../fonts/foods/牛肉面.jpg'
 
+class Note extends React.Component{
+    render(){
+        return (
+            <div className="note" key={this.props.data.id}>
+                <div className="note-graph"><img src={this.props.data.imgUrl} alt={this.props.data.name}/></div>
+                <div className="note-info">
+                    <div className="title">{this.props.data.name}</div>
+                    <img src=""/>
+                </div>
+            </div>
+        )
+    }
+}
+
 class Home extends React.Component{
     constructor(props){
         super(props);
@@ -60,32 +74,10 @@ class Home extends React.Component{
     }
 
     render(h) {
-        let column_left = this.state.foodList.map((el,index)=>{
-            if (index%2!==0) return false
-            return (
-                <div className="note" key={el.id}>
-                    <div className="note-graph"><img src={el.imgUrl} alt={el.name}/></div>
-                    <h3 className="note-title">{el.name}</h3>
-                    <div className="note-info">
-                        {/* <img src=""/> */}
-                        头像
-                    </div>
-                </div>
-            )
-        })
-        let column_right =this.state.foodList.map((el,index)=>{
-            if (index%2===0) return false
-            return (
-                <div className="note" key={el.id}>
-                    <div className="note-graph"><img src={el.imgUrl} alt={el.name}/></div>
-                    <h3 className="note-title">{el.name}</h3>
-                    <div className="note-info">
-                        {/* <img src=""/> */}
-                        头像
-                    </div>
-                </div>
-            )
-        })
+        // 奇数项
+        let column_left = this.state.foodList.map((el,index)=>(index%2!==0?'':<Note data={el}/>))
+        // 偶数项
+        let column_right = this.state.foodList.map((el,index)=>(index%2===0?'':<Note data={el}/>))
         return (
             <div className="home app-page">
                 <header className="header-wrap">
