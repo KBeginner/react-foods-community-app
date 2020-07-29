@@ -1,4 +1,9 @@
 .Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     background-color: #85a4b8;
     color: #ffffff;
     height: 1.5rem;
@@ -6,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 .title{
     position: absolute;

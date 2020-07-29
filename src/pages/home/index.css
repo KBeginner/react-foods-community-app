@@ -1,16 +1,51 @@
 .header-wrap{
     background-color: #ffffff;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 }
 .header-wrap .click-btn{
     margin: 0 auto;
     width: 60%;
     height: 3.5rem;
-    background-color: blueviolet;
+    background-color: #e35629;
     color: #fff;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.6rem;
+}
+.header-wrap .click-btn:active{
+    background-color: #d64213;
+}
+.body-wrap{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.note{
+    margin-right: 0.5rem;
+    margin-bottom: 0.8rem;
+    background-color: #fff;
+    box-shadow: 0 1px 0.2rem 0 rgba(0,0,0,.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.column:last-child .note{
+    margin-right: 0;
+}
+.note img{
+    width: 100%;
 }

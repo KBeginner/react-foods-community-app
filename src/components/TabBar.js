@@ -17,7 +17,7 @@ class Nav extends React.Component{
                 {
                     id: 1,
                     link: '/',
-                    title: '吃啥',
+                    title: '首页',
                     icon: HomeIcon,
                     selectedIcon: HomeSelecctedIcon
                 },

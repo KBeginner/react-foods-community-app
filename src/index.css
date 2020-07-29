@@ -7,4 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #606266;
 }
+.app-page{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
