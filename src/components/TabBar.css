@@ -8,17 +8,17 @@ ul.tabber{
     left: 0;
     right: 0;
     box-shadow: 0 0 10rem #f5f5f9;
+    background-color: #ffffff;
 }
 .tabber li{
     list-style: none;
-    background-color: #ffffff;
     width: 100%;
-    min-height: 3rem;
+    height: 3.5rem;
     text-align: center;
 }
 .tabber li a{
     height: 100%;
-    color:#606266;
+    color:#909399;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -26,7 +26,7 @@ ul.tabber{
     font-size: 0.7rem;
 }
 .tabber li.active a{
-    color: #fba913;
+    color: #85a4b8;
 }
 .tabber li img{
     width: 1.3rem;
