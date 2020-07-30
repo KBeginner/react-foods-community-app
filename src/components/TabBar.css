@@ -26,9 +26,14 @@ ul.tabber{
     font-size: 0.7rem;
 }
 .tabber li.active a{
-    color: #85a4b8;
+    color: #59819a;
 }
 .tabber li img{
     width: 1.3rem;
     height: 1.3rem;
+}
+.tabber li.add-btn img{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
 }

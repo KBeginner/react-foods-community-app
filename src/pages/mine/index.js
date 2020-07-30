@@ -9,7 +9,11 @@ class Mine extends React.Component{
     }
 
     render(){
-        return <h1>{this.state.b}</h1>
+        return (
+            <div className="app-page">
+                <h1>{this.state.b}</h1>
+            </div>
+        )
     }
 }
 

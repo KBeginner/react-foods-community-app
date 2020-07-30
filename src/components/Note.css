@@ -1,0 +1,44 @@
+.note{
+    margin-right: 0.5rem;
+    margin-bottom: 0.8rem;
+    background-color: #fff;
+    box-shadow: 0 1px 0.2rem 0 rgba(0,0,0,.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.column:last-child .note{
+    margin-right: 0;
+}
+.note .title{
+    margin: 0;
+    color: #303133;
+    line-height: 1.5rem;
+    padding: 0.5rem 0.7rem;
+    letter-spacing: 0.1rem;
+}
+.note img{
+    width: 100%;
+}
+.note-info {
+    padding: 0.5rem 0.7rem 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.note-info .pic img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.note-info .love img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.note-info .pic, .note-info .love{
+    display: flex;
+    align-items: center;
+}

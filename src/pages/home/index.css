@@ -31,29 +31,3 @@
 }
 
 /* note 组件 */
-.column .note{
-    margin-right: 0.5rem;
-    margin-bottom: 0.8rem;
-    background-color: #fff;
-    box-shadow: 0 1px 0.2rem 0 rgba(0,0,0,.1);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.column:last-child .note{
-    margin-right: 0;
-}
-.note-info {
-    padding: 0.5rem;
-}
-.note-info .title{
-    margin: 0;
-    font-weight: 600;
-    color: #303133;
-}
-.note img{
-    width: 100%;
-}

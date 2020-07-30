@@ -2,11 +2,10 @@ import React from 'react'
 import './TabBar.css'
 import {Link} from 'react-router-dom'
 import HomeIcon from '../fonts/home.svg'
-import RankingIcon from '../fonts/ranking.svg'
 import MineIcon from '../fonts/mine.svg'
 import HomeSelecctedIcon from '../fonts/homeSelected.svg'
 import MineSelectedIcon from '../fonts/mineSelected.svg'
-import RankingSelectedIcon from '../fonts/rankingSelected.svg'
+import Add from '../fonts/add.svg'
 
 class Nav extends React.Component{
     constructor(props){
@@ -23,10 +22,8 @@ class Nav extends React.Component{
                 },
                 {
                     id: 2,
-                    link: '/ranking',
-                    title: '食榜',
-                    icon: RankingIcon,
-                    selectedIcon: RankingSelectedIcon
+                    link: '/addNote',
+                    icon: Add,
                 },
                 {
                     id: 3,
@@ -48,12 +45,23 @@ class Nav extends React.Component{
 
     render(){
         let list = this.state.tarList.map(el=>{
-            return  <li className={this.state.selectedIndex===el.id?'active':''} key={el.id}>
-                        <Link to={el.link} onClick={(e)=>this.change(el.id)}>
-                            <img src={this.state.selectedIndex===el.id?el.selectedIcon:el.icon} alt={el.title} onClick={(e)=>this.change(el.id)}/>
-                            <span>{el.title}</span>    
+            if (el.id===2) {
+                return (
+                    <li className="add-btn" key={el.id}>
+                        <Link to={el.link}>
+                            <img src={el.icon} alt={el.title} onClick={(e)=>this.change(el.id)}/>
                         </Link>
                     </li>
+                )
+            } 
+            return (
+                <li className={this.state.selectedIndex===el.id?'active':''} key={el.id}>
+                    <Link to={el.link} onClick={(e)=>this.change(el.id)}>
+                        <img src={this.state.selectedIndex===el.id?el.selectedIcon:el.icon} alt={el.title} onClick={(e)=>this.change(el.id)}/>
+                        <span>{el.title}</span>    
+                    </Link>
+                </li>
+            )
         })
     return <ul className="tabber">{list}</ul>
     }
