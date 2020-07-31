@@ -5,15 +5,15 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import App from './pages/App';
 import Add from './pages/addNote/index';
+import Home from './pages/home/index'
+import Mine from './pages/mine/index'
 
 
 ReactDOM.render(
   // <App/>,
   <Router>
-      <Switch>
-        <Route exact path='/' component={App}/>
-        <Route path='/addNote' component={Add}/>
-      </Switch>
+      <Route exact path='/' component={App}/>
+      <Route path='/addNote' component={Add}/>
   </Router>,
   document.getElementById('root')
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import NavBar from '../components/NavBar'
 import TabBar from '../components/TabBar'
 import Home from './home/index'
@@ -12,10 +12,8 @@ class App extends React.Component{
     return (
       <div>
         <NavBar/>
-        <BrowserRouter>
-          <Route path='/' component={Home}/>
-          <Route path='/mine' component={Mine}/>
-        </BrowserRouter>
+        <Route path='/  ' component={Home}/>
+        <Route path='/mine' component={Mine}/>
         <TabBar/>
       </div>
     )
