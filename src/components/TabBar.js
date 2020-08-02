@@ -48,8 +48,8 @@ class Nav extends React.Component{
             if (el.id===2) {
                 return (
                     <li className="add-btn" key={el.id}>
-                        <Link to={el.link}>
-                            <img src={el.icon} alt={el.title} onClick={(e)=>this.change(el.id)}/>
+                        <Link to={el.link} onClick={(e)=>this.change(el.id)}>
+                            <img src={el.icon} alt={el.title} />
                         </Link>
                     </li>
                 )

@@ -12,7 +12,7 @@ class App extends React.Component{
     return (
       <div>
         <NavBar/>
-        <Route path='/  ' component={Home}/>
+        <Route exact path='/' component={Home}/>
         <Route path='/mine' component={Mine}/>
         <TabBar/>
       </div>
