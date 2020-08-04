@@ -12,7 +12,7 @@ import Mine from './pages/mine/index'
 ReactDOM.render(
   // <App/>,
   <Router>
-      <Route exact path='/' component={App}/>
+      <Route path='/' component={App}/>
       <Route path='/addNote' component={Add}/>
   </Router>,
   document.getElementById('root')

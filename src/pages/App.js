@@ -8,6 +8,9 @@ import Mine from './mine/index'
 import 'antd-mobile/dist/antd-mobile.css';
 
 class App extends React.Component{
+  componentWillMount(){
+    console.log(this.$router)
+  }
   render(){
     return (
       <div>
