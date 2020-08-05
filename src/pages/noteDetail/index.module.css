@@ -1,0 +1,48 @@
+.noteDetail header{
+    height: 1.5rem;
+    padding: 1rem 0;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #606266;
+}
+.headerWrap{
+    display: flex;
+    align-items: center;
+}
+.backIcon{
+    filter: drop-shadow(1rem 0 0 #303133);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.userIcon{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2.2rem;
+    border-radius: 50%;
+}
+.followIcon{
+    color: #d64213;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #d64213;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+}
+.ShareIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1.5rem;
+}
+.noteDetail .picWrapper img{
+    width: 100%;
+}
+.noteDetail .content .title{
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #ffffff;
+}
