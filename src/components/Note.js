@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Note.css'
 import love from '../fonts/love.svg'
 import loved from '../fonts/loved.svg'
@@ -15,7 +16,6 @@ class Note extends React.Component{
     }
 
     loveHandle(id,type){
-        console.log(id, type)
         let arr = this.state.loveds.map(el=>el)
         if (type===1) {
             this.setState({
@@ -30,8 +30,8 @@ class Note extends React.Component{
     }
 
     render(){
-        return (
-            <div className="note">
+        return (    
+            <Link className="note" to={'/noteDetail/'+this.props.data.noteId}>
                 <div className="note-graph"><img src={this.props.data.photoList[0]} alt={this.props.data.title}/></div>
                 <h4 className="title">{this.props.data.title}</h4>
                 <div className="note-info">
@@ -46,10 +46,10 @@ class Note extends React.Component{
                             loveHandle={this.loveHandle.bind(this)}
                         /> */}
                         <img src={love} alt="收藏"/>
-                        <span style={{margin:'0 0.2rem'}}>{this.props.data.loves}</span>
+                        <span style={{marginLeft:'0.2rem'}}>{this.props.data.loves}</span>
                     </div>
                 </div>
-            </div>
+            </Link>
         )
     }
 }

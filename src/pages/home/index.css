@@ -1,8 +1,8 @@
-.header-wrap{
+.home .header-wrap{
     background-color: #ffffff;
     padding: 3rem 1rem;
 }
-.header-wrap .click-btn{
+.home .header-wrap .click-btn{
     margin: 0 auto;
     width: 60%;
     height: 3.5rem;
@@ -14,16 +14,16 @@
     align-items: center;
     border-radius: 0.6rem;
 }
-.header-wrap .click-btn:active{
+.home .header-wrap .click-btn:active{
     background-color: #d64213;
 }
-.body-wrap{
+.home .body-wrap{
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-.column{
+.home .column{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

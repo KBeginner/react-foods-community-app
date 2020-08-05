@@ -1,6 +1,6 @@
 import React from 'react'
 import './TabBar.css'
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import HomeIcon from '../fonts/home.svg'
 import MineIcon from '../fonts/mine.svg'
 import HomeSelecctedIcon from '../fonts/homeSelected.svg'
@@ -11,7 +11,7 @@ class Nav extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            selectedIndex: 1,
+            selectedIndex: null,
             tarList:[
                 {
                     id: 1,
@@ -34,6 +34,17 @@ class Nav extends React.Component{
                 }
             ]
         }
+    }
+
+    componentDidMount(){
+        let routerObj = {
+            '/' : 1,
+            '/addNote' : 2,
+            '/mine' : 3
+        }
+        this.setState({
+            selectedIndex : routerObj[this.props.location.pathname]
+        })
     }
 
     change(val){
@@ -67,4 +78,4 @@ class Nav extends React.Component{
     }
 }
 
-export default Nav
+export default withRouter(Nav)
