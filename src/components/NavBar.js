@@ -2,6 +2,7 @@ import React from 'react'
 import './NavBar.css'
 import BackIcon from '../fonts/back.svg'
 import MoreIcon from '../fonts/more.svg'
+import { withRouter } from 'react-router-dom'
 
 class NavBar extends React.Component{
     static defaultProps = {
@@ -11,7 +12,7 @@ class NavBar extends React.Component{
     }
 
     backHandle(){
-        this.props.backHandle()
+        this.props.history.goBack()
     }
 
     render(){
@@ -23,4 +24,4 @@ class NavBar extends React.Component{
     }
 }
 
-export default NavBar
+export default withRouter(NavBar)
