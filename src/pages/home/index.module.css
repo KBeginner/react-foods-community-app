@@ -1,8 +1,8 @@
-.home .header-wrap{
+.bodyWrap{
     background-color: #ffffff;
     padding: 3rem 1rem;
 }
-.home .header-wrap .click-btn{
+.bodyWrap .clickBtn{
     margin: 0 auto;
     width: 60%;
     height: 3.5rem;
@@ -14,20 +14,18 @@
     align-items: center;
     border-radius: 0.6rem;
 }
-.home .header-wrap .click-btn:active{
+ .bodyWrap .clickBtn:active{
     background-color: #d64213;
 }
-.home .body-wrap{
+ .bodyWrap{
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-.home .column{
+ .column{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-
-/* note 组件 */

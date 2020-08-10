@@ -1,5 +1,5 @@
 import React from "react"
-import "./index.css"
+import Style from "./index.module.css"
 import data from '../../api/data'
 import Note from '../../components/Note'
 
@@ -24,13 +24,13 @@ class Home extends React.Component{
         // 偶数项
         let column_right = this.state.noteList.map((el,index)=>(index%2===0?'':<Note key={index} data={el}/>))
         return (
-            <div className="home app-page">
-                {/* <header className="header-wrap">
-                    <div className="click-btn" onClick={this.startHandle.bind(this)}>点我告诉你</div>
+            <div className="app-page">
+                {/* <header className={Style.bodyWrap}>
+                    <div className={Style.clickBtn} onClick={this.startHandle.bind(this)}>点我告诉你</div>
                 </header> */}
-                <main className="body-wrap">
-                    <div className="column">{column_left}</div>
-                    <div className="column">{column_right}</div>
+                <main className={Style.bodyWrap}>
+                    <div className={Style.column}>{column_left}</div>
+                    <div className={Style.column}>{column_right}</div>
                 </main>
             </div>
         )

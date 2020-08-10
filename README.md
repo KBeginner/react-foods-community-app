@@ -8,6 +8,8 @@ React-Router：https://www.jianshu.com/p/0d2da6c4abd3
 
 Redux：https://www.jianshu.com/p/f6c5434c6e2d
 
+CSS Modules：http://www.ruanyifeng.com/blog/2016/06/css_modules.html
+
 
 
 In the project directory, you can run:
