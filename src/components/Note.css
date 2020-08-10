@@ -10,6 +10,9 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+.note {
+    text-decoration: none;
+}
 .column:last-child .note{
     margin-right: 0;
 }
