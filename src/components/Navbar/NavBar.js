@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavBar.css'
-import BackIcon from '../fonts/back.svg'
-import MoreIcon from '../fonts/more.svg'
+import BackIcon from '../../fonts/back.svg'
+import MoreIcon from '../../fonts/more.svg'
 import { withRouter } from 'react-router-dom'
 
 class NavBar extends React.Component{

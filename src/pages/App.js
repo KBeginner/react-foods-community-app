@@ -1,19 +1,18 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import NavBar from '../components/NavBar'
-import TabBar from '../components/TabBar'
+import NavBar from '../components/Navbar/NavBar'
+import TabBar from '../components/Tabbar/TabBar'
 import Home from './home/index'
-import Mine from './mine/index'
+import Mine from '../pages/mine/index'
 
-class App extends React.Component{
+class App extends React.Component {
 
-  render(){
+  render() {
     return (
       <div className="app">
-        <NavBar/>
-        <Route exact path='/' component={Home}/>
-        <Route path='/mine' component={Mine}/>
-        <TabBar/>
+        <NavBar />
+        <Home/>
+        <TabBar />
       </div>
     )
   }

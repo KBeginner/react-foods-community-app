@@ -1,7 +1,7 @@
 import React from "react"
 import Style from "./index.module.css"
 import data from '../../api/data'
-import Note from '../../components/Note'
+import Note from '../../components/Note/Note'
 
 class Home extends React.Component{
     constructor(props){

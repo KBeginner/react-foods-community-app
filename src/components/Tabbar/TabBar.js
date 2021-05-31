@@ -1,11 +1,11 @@
 import React from 'react'
 import './TabBar.css'
 import {Link, withRouter} from 'react-router-dom'
-import HomeIcon from '../fonts/home.svg'
-import MineIcon from '../fonts/mine.svg'
-import HomeSelecctedIcon from '../fonts/homeSelected.svg'
-import MineSelectedIcon from '../fonts/mineSelected.svg'
-import Add from '../fonts/add.svg'
+import HomeIcon from '../../fonts/home.svg'
+import MineIcon from '../../fonts/mine.svg'
+import HomeSelecctedIcon from '../../fonts/homeSelected.svg'
+import MineSelectedIcon from '../../fonts/mineSelected.svg'
+import Add from '../../fonts/add.svg'
 
 class Nav extends React.Component{
     constructor(props){

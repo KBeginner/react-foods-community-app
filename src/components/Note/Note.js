@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Note.css'
-import love from '../fonts/love.svg'
-import loved from '../fonts/loved.svg'
+import love from '../../fonts/love.svg'
+// import loved from '../../fonts/loved.svg'
 
 
 class Note extends React.Component{
@@ -54,15 +54,14 @@ class Note extends React.Component{
     }
 }
 
-class Love extends React.Component{
-    render(){
-        console.log(this.props, 'props')
-        if (this.props.loveds.includes(this.props.id)) {
-            return <img src={loved} alt="已收藏" onClick={this.props.loveHandle.bind(this, this.props.id, 1)}/>
-        } else {
-            return <img src={love} alt="收藏" onClick={this.props.loveHandle.bind(this, this.props.id, 2)}/>
-        }
-    }
-}
+// class Love extends React.Component{
+//     render(){
+//         if (this.props.loveds.includes(this.props.id)) {
+//             return <img src={loved} alt="已收藏" onClick={this.props.loveHandle.bind(this, this.props.id, 1)}/>
+//         } else {
+//             return <img src={love} alt="收藏" onClick={this.props.loveHandle.bind(this, this.props.id, 2)}/>
+//         }
+//     }
+// }
 
 export default Note

@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import NavBar from '../../components/NavBar'
+import NavBar from '../../components/Navbar/NavBar'
 
 class Ranking extends React.Component{
     render(){
